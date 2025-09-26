@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="widget">
+    <h2 class="title">Aura</h2>
+
+    <div class="stats">
+        <div class="stat" id="cpu">
+            <span class="label">CPU</span>
+            <span class="value">0%</span>
+        </div>
+        <div class="stat" id="ram">
+            <span class="label">RAM</span>
+            <span class="value">0%</span>
+        </div>
+        <div class="stat" id="disk">
+            <span class="label">Disk</span>
+            <span class="value">0%</span>
+        </div>
+    </div>
+
+    <div class="network">
+        <div>Upload: <span id="upload">0 KB/s</span></div>
+        <div>Download: <span id="download">0 KB/s</span></div>
+    </div>
+
+    <div class="timebar">
+        <div id="clock">--:--:--</div>
+        <div id="uptime">Uptime: 0h 0m</div>
+    </div>
+
+    <div class="battery">
+        <div class="bar">
+            <div class="fill" id="battery-pill"></div>
+        </div>
+        <div class="state" id="battery-state">0%</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/eel.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
 
